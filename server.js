@@ -41,6 +41,7 @@ app.listen(3000, function() {
 
 
 //   post the data from postman to database
+// async details will be given tommorow
   app.post("/posts", async (req, res) => {
     // collection name is abc
 	const detail = new Abc({
