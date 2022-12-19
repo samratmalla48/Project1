@@ -1,18 +1,14 @@
-const mongoose = require("mongoose");
+// importing mongoose in this script
+const mongoose = require('mongoose');
 
-const Schema = mongoose.Schema;
-
-let detail = new Schema({
-  name: {
-    type: String
-  },
-  age: {
-    type: Number
-  },
-
-  breed: {
-    type: String
-  }
+// creating schema 
+let detail = new mongoose.Schema({
+  name: String
 });
 
-module.exports = mongoose.model("detail", detail);
+
+// here ant is collection and  detail is the variable where schema is stored.
+const Abc = mongoose.model("ANT", detail);
+
+// exporting schema to the main js file
+module.exports = {Abc}
